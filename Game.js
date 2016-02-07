@@ -7,6 +7,7 @@ var Game = (function() {
 		var WORLD_WIDTH = 600;
 		var FRICTION = 0.8;
 		var GRAVITY = 0.3;
+        var time = 30 * 1000;
 		var player;
 		var boxes;
 
@@ -15,8 +16,8 @@ var Game = (function() {
 			boxes = createBoxes();
 			canvas.width = WORLD_WIDTH;
 			canvas.height = WORLD_HEIGHT;
-
-		  update();
+            startTimer(time);
+            update();
 		}
 
 		function update() {
@@ -93,6 +94,15 @@ var Game = (function() {
 			character.velY += GRAVITY;
 		}
 	}
+
+    function startTimer(time) {
+        var timer = new Timer(5000, gameOver);
+        timer.start();
+    }
+
+    function gameOver() {
+        alert('game over');
+    }
 
 	function checkCollisions(shapeA, shapeB) {
         // get the vectors to check against
