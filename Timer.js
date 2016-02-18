@@ -29,6 +29,14 @@ var Timer = (function() {
 		}
 	};
 
+	Timer.prototype.pause = function() {
+		clearInterval(this.interval);
+	};
+
+	Timer.prototype.resume = function() {
+		this.start();
+	};
+
 	return Timer;
 
 })();

@@ -1,5 +1,5 @@
 var Character = (function() {
-	return function(options) {
+	var Character = function(options) {
 		this.x = options.x;
 		this.y = options.y;
 		this.height = options.height;
@@ -10,4 +10,7 @@ var Character = (function() {
 		this.jumping = false;
 		this.grounded = false;
 	}
+
+	return Character;
+
 })();

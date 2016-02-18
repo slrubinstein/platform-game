@@ -23,18 +23,33 @@ var boxesData = (function() {
     x: 170,
     y: 250,
     width: 80,
-    height: 30
+    height: 20
 	}, {
     x: 220,
-    y: 150,
+    y: 170,
     width: 20,
-    height: 80
+    height: 60
 	}, {
     x: 270,
     y: 50,
     width: 40,
     height: 40
-	}];
+	}, {
+		x: 280,
+    y: 220,
+    width: 60,
+    height: 40
+	}, {
+  	x: 320,
+    y: 200,
+    width: 20,
+    height: 50
+  }, {
+  	x: 160,
+    y: 140,
+    width: 20,
+    height: 20
+  }];
 
 	return {
 		getAll: getAll

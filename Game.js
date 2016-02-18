@@ -97,7 +97,7 @@ var Game = (function() {
 
     function startTimer(time) {
         var timer = new Timer(5000, gameOver);
-        timer.start();
+        // timer.start();
     }
 
     function gameOver() {
